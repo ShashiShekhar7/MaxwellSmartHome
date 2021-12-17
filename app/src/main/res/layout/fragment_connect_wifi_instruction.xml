@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F1F1F1"
+    tools:context=".ConnectWifiInstructionFragment">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:text="Cancel"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="18dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Select 2.4 GHz Wi-Fi Network and enter password."
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:gravity="center_horizontal"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="If your Wi-Fi is 5GHz, please set it to be 2.4GGz."
+                    android:layout_gravity="center_horizontal"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_margin="22dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_gravity="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/icon_emoji_happy"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="2.4 GHz"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"
+                            android:drawableStart="@drawable/ic_baseline_router_24"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:layout_marginTop="8dp"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_margin="22dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_gravity="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/icon_emoji_sad"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="2.4 GHz"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"
+                            android:drawableStart="@drawable/ic_baseline_router_24"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:layout_marginTop="8dp"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_margin="22dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_connected_ssid"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:text="Not Connected"
+                    android:textSize="18dp"
+                    android:layout_marginBottom="4dp"
+                    android:gravity="center_vertical"
+                    android:drawableStart="@drawable/ic_baseline_wifi_24"
+                    android:drawablePadding="16dp"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_margin="1dp"
+                    android:background="@color/design_default_color_primary"/>
+
+                <EditText
+                    android:id="@+id/et_connected_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:hint="Password"
+                    android:layout_marginTop="4dp"
+                    android:drawableStart="@drawable/ic_baseline_lock_24"
+                    android:drawablePadding="16dp"
+                    android:background="@android:color/transparent"/>
+
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_start_config"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Start"
+                android:layout_margin="24dp"/>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>
